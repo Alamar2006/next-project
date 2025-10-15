@@ -23,7 +23,7 @@ export const Filters: React.FC<Props> = ( {className} ) => {
 
             {/* Price */}
             <div className="mt-5 border-y py-6 pb-7 border-y-neutral-100 "  >
-                <p className="mb-3 font-bold">Price от и до:</p>
+                <p className="mb-3 font-bold ">Price от и до:</p>
                 <div className="flex gap-3 mb-5" >
                     <Input type="number" placeholder="0" min={0} max={30000} defaultValue={0} />
                     <Input type="number" placeholder="30000" min={100} max={30000} defaultValue={0}/>
@@ -42,9 +42,9 @@ export const Filters: React.FC<Props> = ( {className} ) => {
             ]}
             items={[
                 {text:'Курсовая1', value:'i1'}, {text:'Курсовая2', value:'i2'}, {text: 'Курсовая3', value: 'i3'},
-                {text:'АААА???', value:'i1'}, {text:'Ляяяя', value:'i2'}, {text: 'гиг и', value: 'i3'},
-                {text:'Курва че как?', value:'i1'}, {text:'Чечен', value:'i2'}, {text: 'Курсовая3', value: 'i3'},
-                {text:'Ты меня провоцируешь?', value:'i1'}, {text:'Бабиджон', value:'i2'}, {text: 'Як маш на имея', value: 'i3'},
+                {text:'АААА???', value:'i4'}, {text:'Ляяяя', value:'i5'}, {text: 'гиг и', value: 'i6'},
+                {text:'Курва че как?', value:'i7'}, {text:'Чечен', value:'i8'}, {text: 'Курсовая3', value: 'i9'},
+                {text:'Ты меня провоцируешь?', value:'i10'}, {text:'Бабиджон', value:'i11'}, {text: 'Як маш на имея', value: 'i12'},
             ]}
             />
 

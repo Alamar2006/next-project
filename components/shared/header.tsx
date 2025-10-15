@@ -4,6 +4,8 @@ import { Container } from './index'
 import Image from "next/image"
 import { Button } from "../ui/index"
 import { ArrowRight, ShoppingCart, UserPlus } from "lucide-react"
+import Link from "next/link"
+import { SearchInput } from "./search-input"
 
 interface Props {
     className?: string,
@@ -12,17 +14,23 @@ interface Props {
 export const Header: React.FC<Props> = ({className}) => {
     return (
 
-        <header className={cn('border border-b', className)}>
+        <header className={cn('border-b relative', className)}>
             <Container className="flex items-center justify-between py-2" >
 
                 {/* Left part */}
-
-                <div className='flex items-center justify-between py-8' >
-                    <Image src='/favicon.ico' alt="logo"  width={28} height={28} />
-                    <div>
-                        <h1 className="text-2xl uppercase font-black" >Что-то там</h1>
-                        <p className="text-sm  text-gray-400  leading-3" >uwu</p>
+                <Link href='/' className="flex-shrink-0"> 
+                {/* Странный css */}
+                    <div className='flex items-center justify-between py-8' >
+                        <Image src='/favicon.ico' alt="logo"  width={28} height={28} />
+                        <div>
+                            <h1 className="text-2xl uppercase font-black" >Что-то там</h1>
+                            <p className="text-sm  text-gray-400  leading-3" >uwu</p>
+                        </div>
                     </div>
+                </Link>
+
+                <div  className="mx-10 flex-1" >
+                    <SearchInput/>
                 </div>
 
                 {/* Right part */}
